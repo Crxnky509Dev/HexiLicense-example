@@ -13,11 +13,10 @@ This project provides a minimal **API-only** example for integrating with [HexiL
 - 🛠️ Built using Express + Mongoose
 
 ---
-
 ## 📦 API Endpoints
 
 ### `POST /register/register-bot`
-
+### For more information on API Check here https://hexilicense.xyz/api.html
 Registers or updates a bot product.
 
 **Body Parameters:**
