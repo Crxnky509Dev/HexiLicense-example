@@ -46,5 +46,5 @@ Responds with a success message and optionally sends:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/hexilicense-api-example.git
+git clone https://github.com/Crxnky509Dev/hexilicense-api-example.git
 cd hexilicense-api-example
