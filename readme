@@ -1,0 +1,50 @@
+# HexiLicense API Example
+
+This project provides a minimal **API-only** example for integrating with [HexiLicense](https://hexilicense.xyz) — a license and product management system designed for developers selling bots, scripts, or other digital products.
+
+---
+
+## 🚀 Features
+
+- 📦 Register and update bot listings
+- 📧 Sends confirmation emails to users
+- 🔐 Protected routes with user authentication (e.g., via sessions or JWT)
+- 📡 Mailer integration (MailerSend or Outlook SMTP)
+- 🛠️ Built using Express + Mongoose
+
+---
+
+## 📦 API Endpoints
+
+### `POST /register/register-bot`
+
+Registers or updates a bot product.
+
+**Body Parameters:**
+
+| Field               | Type     | Required | Description                        |
+|--------------------|----------|----------|------------------------------------|
+| botName            | string   | ✅       | Name of the bot                    |
+| botVersion         | string   | ✅       | Version number                     |
+| botDescription     | string   | ✅       | Short description                  |
+| botCategory        | string   | ✅       | Category (e.g., moderation, music) |
+| botLanguage        | string   | ✅       | Programming language               |
+| features           | string[] | Optional | List of features                   |
+| licenseType        | string   | ✅       | Free, Paid, or Subscription        |
+| price              | number   | ✅       | License price                      |
+| currency           | string   | ✅       | Currency code (e.g., USD)          |
+| supportEmail       | string   | Optional | Email used for communication       |
+
+Responds with a success message and optionally sends:
+- A confirmation email to `supportEmail`
+- A DM to the user (if Discord client is configured)
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/hexilicense-api-example.git
+cd hexilicense-api-example
