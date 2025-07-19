@@ -88,4 +88,4 @@ client.on('messageCreate', async (message) => {
 });
 
 // Log in to Discord using your bot's token
-client.login('MTM5NTUyMTAyNzAzMDY0Njg2NQ.GS7AK9.WfqdCDp0LUA6_nevnzzCYwwTlgyMHDe1nHC0fg');
+client.login('');
